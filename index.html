@@ -5,43 +5,106 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ประวัติส่วนตัว</title>
 <style>
-
-        body { font-family: Arial, sans-serif; display: flex; justify-content: center; padding: 20px; }
-
-        .container { display: flex; max-width: 800px; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-
-        .left, .right { padding: 20px; }
-
-        .left { background: #333; color: #fff; width: 40%; }
-
-        .right { width: 60%; }
-
-        img { width: 100%; border-radius: 8px; }
-
-        .title { font-weight: bold; margin: 10px 0; }
+       body {
+           font-family: Arial, sans-serif;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           margin: 0;
+           background-color: #f5f5f5;
+       }
+       .container {
+           display: flex;
+           width: 80%;
+           max-width: 1000px;
+           background-color: #fff;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+           border-radius: 8px;
+           overflow: hidden;
+       }
+       .left, .right {
+           padding: 20px;
+       }
+       .left {
+           background-color: #333;
+           color: #fff;
+           width: 40%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       .right {
+           background-color: #f9f9f9;
+           width: 60%;
+           color: #333;
+       }
+       .profile-pic {
+           width: 80%;
+           border-radius: 8px;
+           margin-bottom: 20px;
+       }
+       h1, h2 {
+           font-size: 1.2em;
+           margin: 10px 0;
+       }
+       p, li {
+           margin: 5px 0;
+       }
+       .section-title {
+           font-weight: bold;
+           margin-top: 20px;
+           margin-bottom: 10px;
+       }
+       .quote {
+           font-style: italic;
+           margin-top: 15px;
+           color: #ccc;
+           text-align: center;
+       }
+       ul {
+           list-style-type: none;
+           padding: 0;
+       }
 </style>
 </head>
 <body>
 <div class="container">
 <div class="left">
-<img src="profile.jpg" alt="Profile Picture">
-<div class="title">ประวัติส่วนตัว</div>
-<p>ชื่อ: ณัฐวุฒิ แดงโชติ</p>
-<p>อายุ: 19 ปี</p>
-<p>วันเกิด: 07 มกราคม 2005</p>
-<div class="title">ติดต่อ</div>
-<p>โทร: 061-132-9747</p>
-<p>Email: tilend07@gmail.com</p>
+<img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+<h1>ประวัติส่วนตัว</h1>
+<p><strong>ชื่อ:</strong> ณัฐวุฒิ แดงโชติ</p>
+<p><strong>ชื่อเล่น:</strong> โตเต้</p>
+<p><strong>อายุ:</strong> 19 ปี</p>
+<p><strong>วันเกิด:</strong> 07 มกราคม 2005</p>
+<p><strong>เชื้อชาติ:</strong> พะเยา</p>
+<p><strong>ศาสนา:</strong> พุทธ</p>
+<h2>ช่องทางการติดต่อ</h2>
+<p>โทรศัพท์: 061-132-9747</p>
+<p>GMAIL: tilend07@gmail.com</p>
+<p>IG: dn_elit</p>
+<p>FB: Natthawut Daengchot</p>
+<div class="quote">"เรียนรู้ให้มาก เพื่ออนาคตในวันข้างหน้า"</div>
 </div>
 <div class="right">
-<div class="title">การศึกษา</div>
-<p>มัธยม: พระแม่มารีฯ (เกรด 2.56)</p>
-<p>อุดมศึกษา: ม. พะเยา, วิทยาการคอมฯ</p>
-<div class="title">ทักษะ</div>
-<p>เล่นแบดมินตัน</p>
-<div class="title">งานอดิเรก</div>
-<p>วาดรูป, ถ่ายรูป</p>
+<h1>การศึกษา</h1>
+<ul>
+<li>ระดับประถมศึกษา: โรงเรียนเกี้ยวาง</li>
+<li>ระดับมัธยมศึกษา: โรงเรียนพระแม่มารีประจวบคีรีขันธ์ (เกรดเฉลี่ย 2.56)</li>
+<li>ระดับมัธยมศึกษา: โรงเรียนห้วยผึ้ง สายศิลป์-คำนวณ</li>
+<li>ระดับอุดมศึกษา: มหาวิทยาลัยพะเยา, คณะเทคโนโลยีสารสนเทศและการสื่อสาร, สาขาวิทยาการคอมพิวเตอร์</li>
+</ul>
+<h2>ทักษะ และความสามารถ</h2>
+<ul>
+<li>เล่นแบดมินตัน</li>
+</ul>
+<h2>งานอดิเรก</h2>
+<ul>
+<li>วาดรูป</li>
+<li>ถ่ายรูป</li>
+<li>ว่างรูป</li>
+</ul>
 </div>
 </div>
 </body>
-</html> 
+</html>
